@@ -79,7 +79,7 @@ def chooseBus():
 #ввод ФИО
 def correctName(text):
     while True:
-        name = input(f'Введите {text} водителя >>> ')
+        name = input(f'Введите {text} водителя >>> ').rstrip()
         if name.isalpha():
             return name.capitalize()
         print('Введено некорректное имя')
