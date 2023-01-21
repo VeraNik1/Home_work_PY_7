@@ -24,7 +24,7 @@ def ConvertToJSON(file_names):
             for row in file:
                 temp = {k: v for k, v in zip(fieldnames, row.rstrip().split(','))}
                 result.append(temp)
-        with open(item[:-3]+'jsn', 'w', encoding='UTF-8') as out:
+        with open(item[:-3]+'json', 'w', encoding='UTF-8') as out:
             json.dump(result, out, indent=3, ensure_ascii=False) 
 
 #меню конвертации
