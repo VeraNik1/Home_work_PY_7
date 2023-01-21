@@ -1,0 +1,14 @@
+ID автобуса,Госномер,Марка,Статус,ID водителя,ID маршрута
+bus1,Т567КЕ99,ЛиАЗ-5292,Исправен,driver1,r1
+bus2,Н765ЕК99,ЛиАЗ-5293,Ремонт,driver3,r2
+bus3,О877ОЕ99,ЛиАЗ-5256,Исправен,driver5,r2
+bus4,У954РН99,Ikarus-415,Исправен,driver6,r3
+bus5,Р285ОН99,ПАЗ-3237,Ремонт,driver2,r3
+bus6,А936КУ99,ЛиАЗ-5292,Исправен,driver4,r4
+bus7,У125УУ12,ывпывапрл,Исправен,driver3,r2
+bus8,A122AA78,dssad,Исправен,driver3,r3
+bus9,E555EE12,sgsdds,Исправен,driver5,r1
+bus10,B121BB11,gsdsdg,Исправен,driver2,r1
+bus12,X125XX99,Renault283,Исправен,driver9,r4
+bus12,Y555YY123,WTF133,Ремонт,driver9,r8
+bus13,E121EE12,qweew,Исправен,driver9,r1
