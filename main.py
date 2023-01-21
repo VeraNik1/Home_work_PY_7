@@ -16,5 +16,5 @@ if __name__ == "__main__":
         ("8", "Выход", lambda: exit())]
 
     menu = Menu(menuitems)
-    menu.run('>: ')
+    menu.run()
 
