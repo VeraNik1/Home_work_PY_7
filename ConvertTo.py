@@ -8,12 +8,13 @@ file_names = fn.titles.keys()
 def ConvertToCSV(file_names):
     for item in file_names:
         with open(item, 'r', encoding='UTF-8') as file,\
-        open(item[:-3]+'csv', 'w+', encoding='UTF-8') as out:
+        open(item[:-3]+'csv', 'w', encoding='UTF-8') as out:
             fieldnames = fn.titles[item]
             writer = csv.DictWriter(out, fieldnames=fieldnames)
             writer.writeheader()
-            for row in file:
+            for row in file.readlines():
                 writer.writerow({k: v for k, v in zip(fieldnames, row.rstrip().split(','))})  
+    print('Конвертация успешно выполнена!')
 
 #реализация конвертации в json
 def ConvertToJSON(file_names):
@@ -26,6 +27,7 @@ def ConvertToJSON(file_names):
                 result.append(temp)
         with open(item[:-3]+'json', 'w', encoding='UTF-8') as out:
             json.dump(result, out, indent=3, ensure_ascii=False) 
+    print('Конвертация успешно выполнена!')
 
 #меню конвертации
 def letsConvertIt():
@@ -41,6 +43,7 @@ def letsConvertIt():
             ConvertToJSON(file_names)
             break
         elif n == '3': 
+            print("Конвертация отменена!")
             break
         else: 
             print("Введено некорректное значение!")
